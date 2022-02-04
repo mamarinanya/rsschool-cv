@@ -4,9 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/scroll.js"></script>
     <title>CV</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__profile">
+                    <div class="header__profile-name">
+                        <h1>Anna Mamarina</h1>
+                    </div>
+                    <div class="header__profile-photo">
+                        <img class="header__profile-img" src="img/photo.jpg" alt="фото в профиль" width="170" height="170">
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="#aboutme">About me</a></li>
+                        <li class="header__menu-item"><a href="#skills">Scills</a></li>
+                        <li class="header__menu-item"><a href="#code">Examples code</a></li>
+                        <li class="header__menu-item"><a href="#education">Education</a></li>
+                        <li class="header__menu-item"><a href="#english">English</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-display">
+        <div class="container">
+            <div class="main-display_wrap">
+                <ul class="main-display__list">
+                    <li class="main-display__item" id="aboutme">
+                        <div class="main-display__item-tittle">
+                            <div>About me</div>
+                        </div>
+                        <div class="main-display__item-text">
+                            <div class="main-display__item-text-description">I am 19 years old, I am a 3rd year student at the Moscow Aviation Institute. I am studying in the direction of "Computer Science and Computer Engineering". My goal is to become a frontend specialist, web development.</div>
+                            <div class="main-display__item-text-list">
+                                <div class="heading">My strengths:</div>
+                                <ul class="list-strengths">
+                                    <li class="list-strengths-item">- Quick learn</li>
+                                    <li class="list-strengths-item">- Industriousness</li>
+                                    <li class="list-strengths-item">- Responsibility</li>
+                                    <li class="list-strengths-item">- Team playing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-display__item" id="skills">
+                        <div class="main-display__item-tittle-y">
+                            <div>Skills</div>
+                        </div>
+                        <div class="main-display__item-text">
+                            <ul class="list-strengths2">
+                                <li class="list-strengths-item">HTML</li>
+                                <li class="list-strengths-item">CSS</li>
+                                <li class="list-strengths-item">C/C++</li>
+                                <li class="list-strengths-item">Git/GitHub</li>
+                                <li class="list-strengths-item">VS Code, Adobe Illustrator, Inkscape</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main-display__item" id="code">
+                        <div class="main-display__item-tittle">
+                            <div>Code examples</div>
+                        </div>
+                        <div class="main-display__item-text">
+                            <div class="main-display__item-text-code">
+                                <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(51, 51, 51); color: rgb(255, 255, 255);"><span class="hljs-function"><span class="hljs-keyword" style="color: rgb(252, 194, 140);">function</span> <span class="hljs-title" style="color: rgb(255, 255, 170);">findMin</span><span class="hljs-params">(array)</span> </span>
+                                    {
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">let</span> Min; Min = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">array</span>[<span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>];
+                                
+                                        <span class="hljs-keyword" style="color: rgb(252, 194, 140);">for</span> (<span class="hljs-keyword" style="color: rgb(252, 194, 140);">let</span> i = <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>; i &lt; <span class="hljs-keyword" style="color: rgb(252, 194, 140);">array</span>.length; i++) 
+                                        {
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">if</span>(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">array</span>[i] &lt; Min) 
+                                            {
+                                                Min = <span class="hljs-keyword" style="color: rgb(252, 194, 140);">array</span>[i];
+                                            }
+                                        }
+                                            <span class="hljs-keyword" style="color: rgb(252, 194, 140);">return</span>(Min);
+                                    }
+                                   <span class="hljs-keyword" style="color: rgb(252, 194, 140);">let</span> <span class="hljs-keyword" style="color: rgb(252, 194, 140);">array</span> = [<span class="hljs-number" style="color: rgb(211, 99, 99);">2</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">10</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">6</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">-4</span>, <span class="hljs-number" style="color: rgb(211, 99, 99);">0</span>];
+                                   <span class="hljs-keyword" style="color: rgb(252, 194, 140);">const</span> minElement = findMin(<span class="hljs-keyword" style="color: rgb(252, 194, 140);">array</span>)
+                               </pre>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-display__item" id="education">
+                        <div class="main-display__item-tittle-y">
+                            <div>Education</div>
+                        </div>
+                        <div class="main-display__item-text">
+                            <div class="main-display__item-text-list">
+                                <div class="heading">Moscow Aviation Institute</div>
+                                <ul class="list-strengths3">
+                                    <li class="list-strengths-item"><span>Faculty:</span> "Management Systems, Computer Science and Electric Power Engineering"</li>
+                                    <li class="list-strengths-item"><span>Years:</span> 2019 - 2023</li>
+                                    <li class="list-strengths-item"><span>Specialty:</span> automated information processing and management systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-display__item" id="english">
+                        <div class="main-display__item-tittle">
+                            <div>Ehglish</div>
+                        </div>
+                        <div class="main-display__item-text">
+                            <span>Level: A2</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__text">
+                    <div class="footer__phone">+7(977) 855-01-54</div>
+                </div>
+                <div class="footer__text">
+                    <div class="footer__email">mamarina.ania@yandex.ru</div>
+                </div>
+                <div class="footer__text">
+                    <div class="footer__tg">@mamarinanya</div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

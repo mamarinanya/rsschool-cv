@@ -1,0 +1,210 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;    /*по гориз. по центру родителя*/
+}
+
+.header {
+    background: #e48162 url(../img/path839.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+.header__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+}
+.header__profile-name {
+    display: flex;
+    align-items: center;
+    font-family: /*'Bebas Neue', cursive;*/'Roboto Mono', monospace;
+    font-size: 45px;
+    font-weight: bold;
+}
+h1 {
+    padding-bottom: 14px;
+    border-bottom: 5px solid #f4e281;
+}
+.header__profile-photo {
+    display: flex;
+    align-items: center;
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+}
+.header__profile-img {
+    clip-path: circle(47.5% at 50% 50%);
+}
+.header__menu {
+    font-size: 20px;
+}
+.header__menu-list {
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+}
+.header__menu-list li {
+    margin-right: 130px;
+    padding-bottom: 8px;
+}
+.header__menu-list li:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f4e281;
+}
+
+.main-display {
+    background: #f6f2ef;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.main-display li {
+    line-height: 130%;
+}
+.main-display__item {
+    margin-bottom: 60px;
+}
+.main-display__item:hover {
+    box-shadow: 0 0 23px #aa796a;
+}
+.main-display__item-tittle {
+    padding: 10px;
+    background: #e48162;
+    color:white;
+    position: absolute;
+    width: 170px;
+    height: 65px;
+    transform: translate(-37%, -30%);
+    
+}
+.main-display__item-tittle div {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+    text-align: center;
+}
+.main-display__item-tittle-y {
+    padding: 10px;
+    background: #f4e281;
+    color:#e48162;
+    position: absolute;
+    width: 170px;
+    height: 65px;
+    transform: translate(-37%, -30%);
+}
+.main-display__item-tittle-y div {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+    text-align: center;
+}
+.main-display__item-text {
+    background: white;
+    font-size: 17px;
+    padding: 30px 20px 30px 150px;
+}
+.main-display__item-text {
+    color: #894a37;
+    font-family: 'Roboto Mono', monospace;
+}
+.main-display__item-text-description {
+    padding-bottom: 20px;
+}
+.heading {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.list-strengths2 li:before {
+    content: "\f111";
+    font-family: FontAwesome;
+    color: #894a37;
+    font-size: 10px;
+    margin: 10px;
+}
+.list-strengths-item span {
+    font-weight: 600;
+}
+
+.footer {
+    background: #f6f2ef;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 45px;
+    
+}
+.footer__text {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    color: #894a37;
+}
+.footer__phone::before {
+    content: "\f095";
+    font-family: FontAwesome;
+    color: #894a37;
+    font-size: 20px;
+    margin: 15px;
+}
+.footer__email::before {
+    content: "\f0e0";
+    font-family: FontAwesome;
+    color: #894a37;
+    font-size: 20px;
+    margin: 15px;
+}
+.footer__tg::before {
+    content: "\f1d8";
+    font-family: FontAwesome;
+    color: #894a37;
+    font-size: 20px;
+    margin: 15px;
+}
